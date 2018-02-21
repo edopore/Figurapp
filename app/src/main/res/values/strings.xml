@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FigurApp</string>
+    <string name="Figurapp">Calcula tu figura Favorita</string>
+    <string name="Cuadro">Cuadrado</string>
+    <string name="Circulo">Circulo</string>
+    <string name="Triángulo">Triángulo</string>
+    <string name="Cubo">Cubo</string>
+    <string name="Selec">Selecciona la figura a calcular Área, Perímetro y/o Volumen</string>
+    <string name="Area">Área:</string>
+    <string name="Perimetro">Perímetro:</string>
+    <string name="Volumen">Volumen:</string>
+    <string name="calcular">Calcular</string>
+    <string name="copy">Copyrigth 2018 Edopore INC.</string>
+    <string name="datos">Por favor ingrese la arista o radio de la figura a calcular</string>
+    <string name="arista">Arista</string>
+    <string name="radio">Radio</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+</resources>

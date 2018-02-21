@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.edopore.figurapp.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cadetblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10sp"
+        android:background="@color/cadetblue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Selec"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/brown"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50sp"
+                android:layout_marginRight="10sp">
+
+                <RadioButton
+                    android:id="@+id/rCuadro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Cuadro"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rCirculo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Circulo"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/rTriangulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Triángulo"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/rCubo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/Cubo"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Area"
+                    android:textSize="15dp"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/eArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Perimetro"
+                    android:textSize="15dp"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ePerimetro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Volumen"
+                    android:textSize="15dp"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/eVolumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datos"
+            android:gravity="center"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arista"
+                    android:textSize="15dp"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/eValor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/altura"
+                    android:textSize="15dp"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/eValor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:onClick="OnButtonClicked"
+            android:id="@+id/bCalcular"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="45sp"
+            android:gravity="right"
+            android:text="@string/copy"/>
+    </LinearLayout>
+</ScrollView>
