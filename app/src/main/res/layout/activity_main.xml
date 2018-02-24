@@ -76,6 +76,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/tArea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Area"
@@ -92,6 +93,7 @@
                     android:gravity="center"/>
 
                 <TextView
+                    android:id="@+id/tPerimetro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Perimetro"
@@ -108,6 +110,7 @@
                     android:gravity="center"/>
 
                 <TextView
+                    android:id="@+id/tVolumen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Volumen"

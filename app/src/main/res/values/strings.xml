@@ -11,7 +11,7 @@
     <string name="Volumen">Volumen:</string>
     <string name="calcular">Calcular</string>
     <string name="copy">Copyrigth 2018 Edopore INC.</string>
-    <string name="datos">Por favor ingrese la arista o radio de la figura a calcular</string>
+    <string name="datos">Por favor ingrese los siguientes datos de la figura a calcular</string>
     <string name="arista">Arista</string>
     <string name="radio">Radio</string>
     <string name="base">Base</string>
