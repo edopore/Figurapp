@@ -1,7 +1,5 @@
 package com.edopore.figurapp;
-//revisar el por que no funciona el radio button cuando se pone a cambiar los edittext
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -130,27 +128,70 @@ public class MainActivity extends AppCompatActivity {
                     area = num1 * num1;
                     perimetro = 4 * num1;
                     volumen = 0;
+                    if (area - Math.floor(area) == 0) {
+                        Area.setText(String.valueOf((int) area));
+                    } else {
+                        Area.setText(String.valueOf(area));
+                    }
+                    if (perimetro - Math.floor(perimetro) == 0) {
+                        Perimetro.setText(String.valueOf((int) perimetro));
+                    } else {
+                        Perimetro.setText(String.valueOf(perimetro));
+                    }
                     break;
                 case 2:
                     area = (float) Math.PI * (float) Math.pow(num1, a);
                     perimetro = 2 * (float) Math.PI * num1;
                     volumen = 0;
+                    if (area - Math.floor(area) == 0) {
+                        Area.setText(String.valueOf((int) area));
+                    } else {
+                        Area.setText(String.valueOf(area));
+                    }
+                    if (perimetro - Math.floor(perimetro) == 0) {
+                        Perimetro.setText(String.valueOf((int) perimetro));
+                    } else {
+                        Perimetro.setText(String.valueOf(perimetro));
+                    }
                     break;
                 case 3:
                     area = (num1 * num2) / 2;
                     float hip = (float) Math.sqrt((float) Math.pow(num1, a) + (float) Math.pow(num2, a));
                     perimetro = hip + num1 + num2;
                     volumen = 0;
+                    if (area - Math.floor(area) == 0) {
+                        Area.setText(String.valueOf((int) area));
+                    } else {
+                        Area.setText(String.valueOf(area));
+                    }
+                    if (perimetro - Math.floor(perimetro) == 0) {
+                        Perimetro.setText(String.valueOf((int) perimetro));
+                    } else {
+                        Perimetro.setText(String.valueOf(perimetro));
+                    }
                     break;
                 case 4:
                     area = 6 * (float) Math.pow(num1, a);
                     perimetro = 12 * (float) Math.pow(num1, a);
                     volumen = (float) Math.pow(num1, b);
+                    if (area - Math.floor(area) == 0) {
+                        Area.setText(String.valueOf((int) area));
+                    } else {
+                        Area.setText(String.valueOf(area));
+                    }
+                    if (perimetro - Math.floor(perimetro) == 0) {
+                        Perimetro.setText(String.valueOf((int) perimetro));
+                    } else {
+                        Perimetro.setText(String.valueOf(perimetro));
+                    }
+                    if (volumen - Math.floor(volumen) == 0) {
+                        Volumen.setText(String.valueOf((int) volumen));
+                    } else {
+                        Volumen.setText(String.valueOf(volumen));
+                    }
                     break;
             }
-            Area.setText(String.valueOf(area));
-            Perimetro.setText(String.valueOf(perimetro));
-            Volumen.setText(String.valueOf(volumen));
+
         }
     }
 }
