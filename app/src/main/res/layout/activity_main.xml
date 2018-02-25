@@ -157,7 +157,7 @@
                     android:id="@+id/eValor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textAlignment="center"/>
             </LinearLayout>
             <LinearLayout
@@ -178,7 +178,7 @@
                     android:id="@+id/eValor2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textAlignment="center"/>
             </LinearLayout>
         </LinearLayout>
